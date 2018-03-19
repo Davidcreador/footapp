@@ -1,0 +1,12 @@
+{
+  "name": "footjs",
+  "description": "Get statistics from EU Football League",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.6.x",
+    "bootstrap": "3.3.x",
+    "angular-ui-router": "^1.0.15"
+  }
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>EU Football</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+  <link rel="stylesheet" href="app.css" />
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="//cdn.jsdelivr.net/angular.bootstrap/0.11.0/ui-bootstrap-tpls.js"></script>
+  <script src="app.module.js"></script>
+  <script src="services/competition.js"></script>
+  <script src="services/localStorage.js"></script>
+  <script src="components/competition.js"></script>
+  <script src="components/leagueDetails.js"></script>
+  <script src="components/favorites.js"></script>
+  <script src="components/teamMatches.js"></script>
+</head>
+
+<body ng-app="footApp">
+
+  <nav class="navbar is-transparent">
+    <div class="navbar-brand">
+      <h1 class="navbar-item">
+        <strong>EU FootApp</strong>
+      </h1>
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" ui-sref="dashboard" ui-sref-active="active">Dashboard</a>
+        <a class="navbar-item" ui-sref="favorites" ui-sref-active="active">Favorites</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="dashboard">
+    <div class="container">
+      <ui-view></ui-view>
+    </div>
+  </div>
+</body>
+
+</html>
