@@ -6,6 +6,11 @@ var footApp = angular.module('footApp', ['ui.router', 'ui.bootstrap']);
 footApp.config(function($stateProvider) {
   var states = [
     {
+      name: 'home',
+      url: '',
+      redirectTo: 'dashboard'
+    },
+    {
       name: 'dashboard',
       url: '/dashboard',
       component: 'competition',
